@@ -11,6 +11,18 @@ if ('serviceWorker' in navigator) {
     });
 }
 
+// Capturar el evento beforeinstallprompt
+window.addEventListener('beforeinstallprompt', (e) => {
+    console.log('💾 App es instalable - usa el menú de Chrome (⋮) para instalar');
+    // No prevenir el comportamiento por defecto para que Chrome muestre la opción en el menú
+});
+
+// Detectar cuando la app ya está instalada
+window.addEventListener('appinstalled', () => {
+    console.log('✅ PWA instalada exitosamente');
+    showStatus('✅ ¡App instalada! Ahora puedes usarla desde tu pantalla de inicio');
+});
+
 // Referencias a elementos del DOM
 const openCameraBtn = document.getElementById('openCamera');
 const closeCameraBtn = document.getElementById('closeCamera');

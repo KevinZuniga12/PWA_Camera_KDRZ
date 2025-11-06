@@ -2,7 +2,7 @@
     "name": "PWA Camera App",
     "short_name": "Camera",
     "description": "Aplicación de cámara progresiva con galería",
-    "start_url": "./Camera.html",
+    "start_url": "./index.html",
     "scope": "./",
     "display": "standalone",
     "orientation": "portrait",

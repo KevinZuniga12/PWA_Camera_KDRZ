@@ -2,33 +2,39 @@
     "name": "PWA Camera App",
     "short_name": "Camera",
     "description": "Aplicación de cámara progresiva con galería",
-    "start_url": "/",
-    "scope": "/",
+    "start_url": "./",
+    "scope": "./",
     "display": "standalone",
     "orientation": "portrait",
     "theme_color": "#4CAF50",
     "background_color": "#ffffff",
     "icons": [
         {
-            "src": "https://via.placeholder.com/192x192/4CAF50/ffffff?text=📷",
+            "src": "camara.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        },
+        {
+            "src": "icon-192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "https://via.placeholder.com/192x192/4CAF50/ffffff?text=📷",
+            "src": "icon-192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "https://via.placeholder.com/512x512/4CAF50/ffffff?text=📷",
+            "src": "icon-512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "https://via.placeholder.com/512x512/4CAF50/ffffff?text=📷",
+            "src": "icon-512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"

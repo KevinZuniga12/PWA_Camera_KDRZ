@@ -82,8 +82,13 @@ function takePhoto() {
         return;
     }
 
+    // Ajustar el canvas al tamaño real del video
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+
+    // Dibujar el video en el canvas con sus proporciones originales
     ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-    const imageDataURL = canvas.toDataURL('image/png');
+    const imageDataURL = canvas.toDataURL('image/jpeg', 0.9); // Usar JPEG con 90% calidad
 
     // Guardar foto en el array
     photos.push({

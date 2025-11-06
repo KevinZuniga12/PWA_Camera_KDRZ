@@ -1,11 +1,12 @@
-const CACHE_NAME = 'camera-pwa-v3';
+const CACHE_NAME = 'camera-pwa-v4';
 const urlsToCache = [
     './',
     './index.html',
     './app.js',
     './manifest.json',
     './icons/icon-192x192.png',
-    './icons/icon-512x512.png'
+    './icons/icon-512x512.png',
+    './icons/camara.svg'
 ];
 
 self.addEventListener('install', (event) => {
